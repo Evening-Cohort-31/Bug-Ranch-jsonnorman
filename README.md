@@ -76,23 +76,43 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+
+   > Drovers is a constant variable that runs a function called hireDrovers. This function uses cattleToDrive as a variable in the function that pulls an array from another Js file.
+
+   <!-- const drovers = hireDrovers(cattleToDrive) -->
+
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > At the bottom there is a console log displaying information that uses a for loop. The for loop creates a const called drover for the loop using information from drovers in the for loop.
+
+<!-- console.log("Here is the team of drovers you will be joining")
+for (const drover of drovers) {
+    console.log(`\t* ${drover.first_name} ${drover.last_name}`) -->
+
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+
+   > https://www.loom.com/share/1da8d360164f487789b5f4a2979e7db5
+
 4. Also in the **journey** module, there is the following code:
+
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
-      journey.push("forest")
+     journey.push("forest");
    }
    ```
+
    Explain this code with your best vocabulary.
-   > Your answer here
+
+   > It's saying, let the variable forestNumber be 0 (start at 0). Next, if forestNumber is less than forests found in areas, then it adds 1 to forestNumber and put the object to the variable journey. It will continue to do this until it is not true.
+
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+
+   > The data base module is a const variable that consists of multiple objects that appear to be arrays with information inside.
+
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > The value comes from the Main.Js. herdSize is just a arugment that is from Main.Js function 'hireDrovers(casttleToDrive) which appears value is showing 50.
+   <!-- const cattleToDrive = 50
+   const drovers = hireDrovers(cattleToDrive)
+   const cattle = roundup(cattleToDrive) -->
 
 ## When You Are Done
 
